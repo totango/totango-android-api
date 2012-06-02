@@ -28,11 +28,13 @@ import com.totango.api.TotangoException;
  */
 public class TotangoTest extends Activity {
 
+   // BEFORE START - set here a proper service ID
+   private final String SERVICE_ID = "SP-XXXX-XX";
+
     private static final String SALES_MANAGER = "Sales Manager";
     private static final String SUCCESS_MANAGER = "Success Manager";
     private static final String REGION = "Region";
 
-    private final String SERVICE_ID = "SP-18030-01";
     private final String TRACK = "track";
     private final String SET_ATTRIBUTES = "Set attributes";
     private final String SET_DISPLAY_NAME = "Set display name";
