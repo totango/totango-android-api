@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Totango API Sample</string>
+    <string name="login">Identify</string>
+    <string name="newProject">New project</string>
+    <string name="newTask">New task</string>
+    <string name="shareProject">Share project</string>
+    <string name="setAccountAttributes">Set account attributes</string>
+    <string name="addMilestone">Add milestone</string>
+    <string name="addTimesheet">Add timesheet</string>
+    <string name="setDisplayName">Set display name</string>
+    <string name="organization">Organization</string>
+    <string name="user">User</string>
+    <string name="cancel">Cancel</string>
+    <string name="sample">Samples of track activities</string>
+    <string name="update">Update</string>
+</resources>

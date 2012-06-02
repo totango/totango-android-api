@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/sample"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/btnSmall"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/login" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnNewProject"
+        android:layout_width="@dimen/btnSmall"
+        android:layout_height="wrap_content"
+        android:text="@string/newProject" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnNewTask"
+        android:layout_width="@dimen/btnSmall"
+        android:layout_height="wrap_content"
+        android:text="@string/newTask" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnShareProject"
+        android:layout_width="@dimen/btnSmall"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/shareProject" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnAddMilestone"
+        android:layout_width="@dimen/btnMedium"
+        android:layout_height="wrap_content"
+        android:text="@string/addMilestone" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnAddTimesheet"
+        android:layout_width="@dimen/btnMedium"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/addTimesheet" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnSetAttributes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setAccountAttributes" 
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnSetDisplayName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setDisplayName" 
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
