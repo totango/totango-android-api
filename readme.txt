@@ -24,9 +24,9 @@ For example:
 
 import com.totango.api.Totango;
 
-private String serviceId = "SP-18030-01";
-private String accountId = "mike@zendesk.com";
-private String user = "Mike";
+private String serviceId = "your Totango service ID here in the format SP-xxxx-01";
+private String accountId = "Id of this account";
+private String user = "user@example.com";
 
 Totango totango = Totango.getInstance();
 totango.setServiceId(serviceId);
