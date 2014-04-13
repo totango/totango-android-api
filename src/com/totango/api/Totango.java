@@ -27,18 +27,18 @@ import java.util.Map;
  */
 public class Totango 
 {
-    private final String TOTANGO_BASE_URL = "http://sdr.totango.com/pixel.gif/";
+    private final static String TOTANGO_BASE_URL = "http://sdr.totango.com/pixel.gif/";
 
-    private final String PREFIX_ACCOUNT_ID = "sdr_o";
-    private final String PREFIX_SERVICE = "sdr_s";
-    private final String PREFIX_USER = "sdr_u";
-    private final String PREFIX_ACTIVITY = "sdr_a";
-    private final String PREFIX_MODULE = "sdr_m";
-    private final String PREFIX_DISPLAY_NAME = "sdr_odn";
+    private final static String PREFIX_ACCOUNT_ID = "sdr_o";
+    private final static String PREFIX_SERVICE = "sdr_s";
+    private final static String PREFIX_USER = "sdr_u";
+    private final static String PREFIX_ACTIVITY = "sdr_a";
+    private final static String PREFIX_MODULE = "sdr_m";
+    private final static String PREFIX_DISPLAY_NAME = "sdr_odn";
 
-    private final String CHARSET = "UTF-8";
+    private final static String CHARSET = "UTF-8";
 
-    private final int DISPLAY_NAME_MAX_LENGTH = 128;
+    private final static int DISPLAY_NAME_MAX_LENGTH = 128;
 
     private String serviceId;
     private String accountID;
@@ -121,15 +121,15 @@ public class Totango
         try 
         {
             StringBuilder builder = new StringBuilder(TOTANGO_BASE_URL);
-            builder.append("?" + PREFIX_SERVICE + "=");
+            builder.append('?').append(PREFIX_SERVICE).append('=');
             builder.append(serviceId);
-            builder.append("&" + PREFIX_ACCOUNT_ID + "=");
+            builder.append('&').append(PREFIX_ACCOUNT_ID).append('=');
             builder.append(URLEncoder.encode(accountID, CHARSET));
-            builder.append("&" + PREFIX_USER + "=");
+            builder.append('&').append(PREFIX_USER).append('=');
             builder.append(URLEncoder.encode(userName, CHARSET));
-            builder.append("&" + PREFIX_ACTIVITY + "=");
+            builder.append('&').append(PREFIX_ACTIVITY).append('=');
             builder.append(URLEncoder.encode(activity, CHARSET));
-            builder.append("&" + PREFIX_MODULE + "=");
+            builder.append('&').append(PREFIX_MODULE).append('=');
             builder.append(URLEncoder.encode(module, CHARSET));
 
             new URL(builder.toString()).getContent();
@@ -171,19 +171,19 @@ public class Totango
         try 
         {
             StringBuilder builder = new StringBuilder(TOTANGO_BASE_URL);
-            builder.append("?" + PREFIX_SERVICE + "=");
+            builder.append('?').append(PREFIX_SERVICE).append('=');
             builder.append(serviceId);
-            builder.append("&" + PREFIX_ACCOUNT_ID + "=");
+            builder.append('&').append(PREFIX_ACCOUNT_ID).append('=');
             builder.append(URLEncoder.encode(accountID, CHARSET));
 
             for (Map.Entry<String, String> attribute : attributes.entrySet()) 
             {
-                builder.append("&" + PREFIX_ACCOUNT_ID + ".");
+                builder.append('&').append(PREFIX_ACCOUNT_ID).append('.');
                 builder.append(URLEncoder.encode(attribute.getKey(), CHARSET));
-                builder.append("=" + URLEncoder.encode(attribute.getValue(), CHARSET));
+                builder.append('=').append(URLEncoder.encode(attribute.getValue(), CHARSET));
             }
 
-            builder.append("&" + PREFIX_USER + "=");
+            builder.append('&').append(PREFIX_USER).append('=');
             builder.append(URLEncoder.encode(userName, CHARSET));
 
             new URL(builder.toString()).getContent();
@@ -216,13 +216,13 @@ public class Totango
         try 
         {
             StringBuilder builder = new StringBuilder(TOTANGO_BASE_URL);
-            builder.append("?" + PREFIX_SERVICE + "=");
+            builder.append('?').append(PREFIX_SERVICE).append('=');
             builder.append(serviceId);
-            builder.append("&" + PREFIX_ACCOUNT_ID + "=");
+            builder.append('&').append(PREFIX_ACCOUNT_ID).append('=');
             builder.append(URLEncoder.encode(accountID, CHARSET));
-            builder.append("&" + PREFIX_USER + "=");
+            builder.append('&').append(PREFIX_USER).append('=');
             builder.append(URLEncoder.encode(userName, CHARSET));
-            builder.append("&" + PREFIX_DISPLAY_NAME + "=");
+            builder.append('&').append( PREFIX_DISPLAY_NAME).append('=');
             builder.append(URLEncoder.encode(displayName, CHARSET));
 
             new URL(builder.toString()).getContent();
