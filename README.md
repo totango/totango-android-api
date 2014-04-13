@@ -30,9 +30,9 @@ For example:
 ```java
 import com.totango.api.Totango;
 
-private final static String serviceId = "your Totango service ID here in the format SP-xxxx-01";
-private final static String accountId = "Id of this account";
-private final static String user = "user@example.com";
+private String serviceId = "your Totango service ID here in the format SP-xxxx-01";
+private accountId = "Id of this account";
+private String user = "user@example.com";
 
 Totango totango = Totango.getInstance();
 totango.setServiceId(serviceId);
