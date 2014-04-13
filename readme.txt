@@ -21,7 +21,7 @@ It is often convenient to call this method directly in the onCreate method.
 If you are using same account ID and user name for your calls it is also good place to set it. 
 Use identify(String accountId, String userName) method to save this attributes in Totango object. 
 For example:
-
+```
 import com.totango.api.Totango;
 
 private String serviceId = "your Totango service ID here in the format SP-xxxx-01";
@@ -31,7 +31,7 @@ private String user = "user@example.com";
 Totango totango = Totango.getInstance();
 totango.setServiceId(serviceId);
 totango.identify(accountId, userName);
-
+```
 * Tracking
 
 To track user activity simply call method track(String activity, String module) if you want to use account ID and user name stored with previous call to identify(String accountId, String userName).
