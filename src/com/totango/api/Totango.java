@@ -1,7 +1,7 @@
 /*
  * @(#)Totango.java   May 31, 2012
  *
- * Copyright 2012 Totango Inc.
+ * Copyright 2014 Totango Inc.
  */
 
 package com.totango.api;
@@ -27,7 +27,7 @@ import java.util.Map;
  */
 public class Totango 
 {
-    private final String TOTANGO_BASE_URL = "http://sdr.totango.com/pixel.gif/";
+    private final String TOTANGO_BASE_URL = "https://sdr.totango.com/pixel.gif/";
 
     private final String PREFIX_ACCOUNT_ID = "sdr_o";
     private final String PREFIX_SERVICE = "sdr_s";
